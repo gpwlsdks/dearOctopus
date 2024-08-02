@@ -2,14 +2,16 @@
   
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- 날짜 표시 -->
+  <article>
     <div>
       <h1> {{ date1.format('YYYY / MM / DD') }} </h1>
       <h4> {{ date1.format('dddd') }}</h4>
     </div>
 
-
     <!-- 첫번째 메인 이미지  -->
-    <img src="./assets/marrge1.jpg">
+    <div class="img1">
+      <img src="./assets/marrge2.jpg">
+    </div>
 
     <!-- 첫번째 메인글 ( 결혼식 정보 )  -->
     <div class = "">
@@ -21,9 +23,10 @@
         <p> 우리가 이런이런이런 과정을 통해 결혼을 합니다 와서 축하해종</p>
     </div>
     <!-- 두번째 이미지   -->
-     <div class="image">
+     <div class="img1">
         <img src="./assets/marrge2.jpg">
     </div>
+  </article>
 
 </template>
 
@@ -41,8 +44,8 @@ date2.format("YYYY-MM-DD HH:mm:ss");
 
 
 
-
 </script>
+
 
 <style>
 
@@ -63,11 +66,10 @@ date2.format("YYYY-MM-DD HH:mm:ss");
   margin-top: 60px;
 }
 
-img {
-  height: 300px;
-  width: 500px;
-}
-
-
+article {padding: 52px 3% 0;}
+article .block {padding: 20px; min-height: 500px;}
+article .block p {line-height: 22px; color: #fff; font-size: 16px; font-weight: 600;}
+article .block:nth-child(2n+1) {background: #999;}
+article .block:nth-child(2n) {background: #222;}
 
 </style>
